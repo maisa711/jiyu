@@ -28,7 +28,7 @@ export async function POST(request: Request) {
     }
 
     const userInfo = {
-        name: user.firstName!,
+        name: user.firstName || "Teammate",
         picture: user.imageUrl!,
     };
 
