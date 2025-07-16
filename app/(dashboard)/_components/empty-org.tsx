@@ -9,7 +9,6 @@ import {
 } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
 
-
 export const EmptyOrg = () => {
   return (
     <div className="h-full flex flex-col items-center justify-center">
@@ -20,16 +19,14 @@ export const EmptyOrg = () => {
       </p>
       <div className="mt-6">
         <Dialog>
-      <DialogTrigger asChild>
-          <Button size="lg">
-            Create Organization
-          </Button>
-      </DialogTrigger>
-      <DialogContent className="p-0 bg-transparent border-none xs:!max-w-[432px]">
-        <DialogTitle className="hidden"/>
-        <CreateOrganization routing="hash"/>
-      </DialogContent>
-    </Dialog>
+          <DialogTrigger asChild>
+            <Button size="lg">Create Organization</Button>
+          </DialogTrigger>
+          <DialogContent className="p-0 bg-transparent border-none xs:!max-w-[432px]">
+            <DialogTitle className="hidden" />
+            <CreateOrganization routing="hash" />
+          </DialogContent>
+        </Dialog>
       </div>
     </div>
   );
