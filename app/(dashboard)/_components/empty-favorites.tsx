@@ -1,9 +1,6 @@
 import Image from "next/image";
 
 
-import { Button } from "@/components/ui/button";
-
-
 export const EmptyFavorites = () => {
   return (
     <div className="h-full flex flex-col items-center justify-center">

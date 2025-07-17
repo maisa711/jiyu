@@ -8,11 +8,10 @@ import { Plus } from "lucide-react";
 import { toast } from "sonner";
 
 interface NewBoardButtonProps {
-    orgId: string;
     disabled?: boolean;
 }
 
-export const NewBoardButton = ({ orgId, disabled }: NewBoardButtonProps) => {
+export const NewBoardButton = ({ disabled }: NewBoardButtonProps) => {
 
     const {organization} = useOrganization();
     const { mutate, pending } = useApiMutation(api.board.create);
@@ -25,7 +24,7 @@ export const NewBoardButton = ({ orgId, disabled }: NewBoardButtonProps) => {
             orgId: organization?.id,
             title: "Untitled",
 
-        }).then((id) => {
+        }).then(() => {//id
             toast.success("Board Created")
         })
             .catch(() => toast.error("Failed to create the board!"))

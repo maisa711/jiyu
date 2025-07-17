@@ -4,12 +4,13 @@ import { Room } from "@/components/room";
 import { Loading } from "./_components/loading";
 
 interface BoardIdPageProps {
-    params: {
+    params: Promise<{
         boardId: string;
-    };
+    }>;
 }
 
-const BoardIdPage = async ({ params }: BoardIdPageProps) => {
+const BoardIdPage = async (props: BoardIdPageProps) => {
+    const params = await props.params;
     const { boardId } = params;
 
     return (
