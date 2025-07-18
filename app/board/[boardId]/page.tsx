@@ -1,7 +1,7 @@
 import { Canvas } from "./_components/canvas";
 
 import { Room } from "@/components/room";
-import { Loading } from "./_components/loading";
+import { Loading } from "./_components/elements/loading";
 
 interface BoardIdPageProps {
     params: Promise<{

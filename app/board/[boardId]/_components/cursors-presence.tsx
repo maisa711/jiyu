@@ -7,7 +7,7 @@ import {
 } from "@liveblocks/react/suspense";
 import { memo } from "react";
 import { Cursor } from "./cursor";
-import { Path } from "./path";
+import { Path } from "./layers/path";
 import { colorToCSS } from "@/lib/utils";
 
 const Cursors = () => {

@@ -9,7 +9,6 @@ interface CursorProps {
   connectionId: number;
 }
 
-
 export const Cursor = memo(({ connectionId }: CursorProps) => {
   const info = useOther(connectionId, (user) => user?.info);
   const cursor = useOther(connectionId, (user) => user?.presence.cursor);

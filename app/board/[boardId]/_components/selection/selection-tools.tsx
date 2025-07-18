@@ -3,7 +3,7 @@ import { useSelectionBounds } from "@/hooks/use-selection-bounds";
 import { Camera, Color } from "@/types/canvas";
 import { useMutation, useSelf } from "@liveblocks/react/suspense";
 import { memo } from "react";
-import { ColorPicker } from "./color-picker";
+import { ColorPicker } from "../color-picker";
 import { useDeleteLayers } from "@/hooks/use-delete-layers";
 import { Button } from "@/components/ui/button";
 import { Hint } from "@/components/hint";

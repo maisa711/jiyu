@@ -3,9 +3,9 @@
 import { nanoid } from "nanoid";
 
 import { useCallback, useEffect, useMemo, useState } from "react";
-import { Info } from "./info";
-import { Participants } from "./participants";
-import { Toolbar } from "./toolbar";
+import { Info } from "./elements/info";
+import { Participants } from "./elements/participants";
+import { Toolbar } from "./toolbar/toolbar";
 
 import {
   Camera,
@@ -35,10 +35,10 @@ import {
 } from "@/lib/utils";
 import { useOthersMapped, useStorage } from "@liveblocks/react/suspense";
 import { LiveObject } from "@liveblocks/client";
-import { LayerPreview } from "./layer-preview";
-import { SelectionBox } from "./selection-box";
-import { SelectionTools } from "./selection-tools";
-import { Path } from "./path";
+import { LayerPreview } from "./layers/layer-preview";
+import { SelectionBox } from "./selection/selection-box";
+import { SelectionTools } from "./selection/selection-tools";
+import { Path } from "./layers/path";
 import { useDisableScrollBounce } from "@/hooks/use-disable-scroll-bounce";
 import { useDeleteLayers } from "@/hooks/use-delete-layers";
 
