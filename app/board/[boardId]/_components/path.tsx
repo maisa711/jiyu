@@ -1,5 +1,4 @@
-import { colorToCSS, getSvgPathFromStroke } from "@/lib/utils";
-import { PathLayer } from "@/types/canvas";
+import { getSvgPathFromStroke } from "@/lib/utils";
 import { getStroke } from 'perfect-freehand'
 
 interface PathProps {
